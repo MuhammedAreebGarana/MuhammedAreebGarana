@@ -15,7 +15,7 @@
 ## 🤝 Let’s Connect
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/mohammed-areeb-56a2051b4/)
-- 🧠 [Substack / Medium / Blog – if applicable]
+- 🧠 Substack @muhdareeb
 
 
 

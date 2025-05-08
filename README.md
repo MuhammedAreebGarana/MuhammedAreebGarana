@@ -1,15 +1,4 @@
-# 👨‍💻 Muhammed Areeb — Data Scientist | AI Researcher | Systems Thinker
-
-
----
-
-## 📊 GitHub Snapshot
-
-[![](https://github-readme-stats.vercel.app/api?username=MuhammedAreeb&show_icons=true&theme=radical&hide=stars)](https://github.com/MuhammedAreeb)
-
-[![](https://github-readme-streak-stats.herokuapp.com/?user=MuhammedAreeb&theme=radical)](https://github.com/MuhammedAreeb)
-
-[![](https://github-readme-stats.vercel.app/api/top-langs/?username=MuhammedAreeb&layout=compact&theme=radical&hide=html)](https://github.com/MuhammedAreeb)
+# 👨‍💻 Muhammed Areeb — Data Science
 
 ---
 

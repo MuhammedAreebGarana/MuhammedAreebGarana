@@ -1,13 +1,13 @@
-# 👨‍💻 Muhammed Areeb — Data Science
+#  Muhammed Areeb 
 
 ---
 
-## 🚀 Domains of Interest
+##  Domains of Interest
 
-- 📈 Predictive Modeling & Machine Learning
-- 📚 NLP & Clinical Text Mining
-- 🧠 Ethical AI & Socially Responsible Systems
-- 🛠️ Product Engineering for Emerging Markets
+-  Predictive Modeling & Machine Learning
+-  NLP & Clinical Text Mining
+-  Ethical AI & Socially Responsible Systems
+-  Product Engineering for Emerging Markets
 
 
 ---

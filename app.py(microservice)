@@ -1,0 +1,52 @@
+//Creating Database//
+CREATE DATABASE IF NOT EXISTS microservice_db;
+
+USE microservice_db;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL
+);
+//Python script for microservice//
+
+from flask import Flask, jsonify, request
+from flask_sqlalchemy import SQLAlchemy
+
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://username:password@localhost/microservice_db'
+db = SQLAlchemy(app)
+
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(255), nullable=False)
+    email = db.Column(db.String(255), nullable=False)
+
+    def __init__(self, username, email):
+        self.username = username
+        self.email = email
+
+@app.route('/users', methods=['GET'])
+def get_users():
+    users = User.query.all()
+    user_list = []
+    for user in users:
+        user_data = {
+            'id': user.id,
+            'username': user.username,
+            'email': user.email
+        }
+        user_list.append(user_data)
+    return jsonify({'users': user_list})
+
+@app.route('/users', methods=['POST'])
+def create_user():
+    data = request.get_json()
+    new_user = User(username=data['username'], email=data['email'])
+    db.session.add(new_user)
+    db.session.commit()
+    return jsonify({'message': 'User created successfully'}), 201
+
+if __name__ == '__main__':
+    db.create_all()
+    app.run(debug=True)
